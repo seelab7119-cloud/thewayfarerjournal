@@ -1,6 +1,6 @@
-# The Wayfarer Journal
+# Fursaway
 
-Live site: https://thewayfarerjournal.netlify.app
+Live site: https://fursaway.netlify.app
 
 Static site deployed on Netlify from the `main` branch. All content lives in `index.html`
 (`stories` and `programmes` arrays). Every deadline is checked against the awarding body's own page.

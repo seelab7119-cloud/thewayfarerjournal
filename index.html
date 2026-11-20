@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Wayfarer Journal</title>
+<meta name="description" content="Verified scholarships, how to apply, and travel rules for students and young professionals.">
+<meta name="google-site-verification" content="NQkAfEYi_GYxNiFQ3iQ9RIAv6r9ONEx5KNfeKGNiGC0" />
+<link rel="canonical" href="https://thewayfarerjournal.netlify.app/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#6d1a2e">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Wayfarer Journal">
+<meta property="og:title" content="The Wayfarer Journal: scholarships, applications and travel, verified">
+<meta property="og:description" content="Live scholarship deadlines, step-by-step application guides and travel rules, checked against official sources.">
+<meta property="og:url" content="https://thewayfarerjournal.netlify.app/">
+<meta property="og:image" content="https://thewayfarerjournal.netlify.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsMediaOrganization","name":"The Wayfarer Journal","url":"https://thewayfarerjournal.netlify.app/","logo":"https://thewayfarerjournal.netlify.app/apple-touch-icon.png","description":"Service journalism on scholarships, how to apply, and travel."}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+/* VOICE everyday-to-work: a serious service newspaper for people about to move their lives
+   IDEA an airport departures board crossed with a broadsheet: every opportunity is a departure with a gate closing time
+   PICTURE the live departures board of scholarships, statuses computed from today's date
+   COLOUR passport burgundy field, paper white, harbour teal support, stamp vermilion accent; the board is its own dark object
+   TYPE Archivo (signage) for heads and the board, Source Serif 4 for reading
+   LAYOUT masthead, full-width burgundy band holding the board, then lead story + rail, sections in bands; phone stacks in reading order */
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#121016);--ink:light-dark(#17141a,#efe9ec);--soft:light-dark(#5b5560,#b3abb3);--rule:light-dark(#e4dde1,#2c2730);--wine:light-dark(#6d1a2e,#4a1220);--wine-ink:#fbeef1;--teal:light-dark(#0e6873,#5fc1cc);--stamp:light-dark(#d43d24,#ff6b4f);--panel:light-dark(#f7f2f4,#1b171e);--board:#141519;--board-ink:#f1ede4}
+:root[data-theme=light]{color-scheme:light}
+:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:24px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Source Serif 4",Georgia,serif;overflow-x:clip}
+a{color:inherit}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--stamp);outline-offset:2px}
+.wrap{max-width:1240px;margin:0 auto;padding-inline:max(4vw,16px)}
+.sans{font-family:Archivo,system-ui,sans-serif}
+.topline{border-bottom:1px solid var(--rule);font:500 14px/1.4 Archivo,system-ui,sans-serif;color:var(--soft)}
+.topline .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 20px;padding-block:8px}
+.mast{padding-block:22px 14px;display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px 28px}
+.logo{font:700 clamp(34px,6vw,58px)/1 "Source Serif 4",Georgia,serif;letter-spacing:-.02em;text-decoration:none}
+.logo small{display:block;font:500 15px/1.4 Archivo,system-ui,sans-serif;letter-spacing:0;color:var(--soft);margin-top:8px}
+nav{border-block:1px solid var(--ink)}
+nav .wrap{display:flex;gap:4px 22px;overflow-x:auto;padding-block:4px}
+nav a{flex:none;font:600 15px/1 Archivo,system-ui,sans-serif;text-decoration:none;padding:12px 0;border-bottom:3px solid transparent}
+nav a:hover{border-color:var(--stamp)}
+.band{padding-block:clamp(28px,4vw,56px)}
+.hero{background:var(--wine);color:var(--wine-ink)}
+.hero-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:10px 30px;margin-bottom:20px}
+.hero h1{font:800 clamp(30px,4.4vw,48px)/1.05 Archivo,system-ui,sans-serif;letter-spacing:-.02em;margin:0;text-wrap:balance;max-width:18ch}
+.hero p{margin:0;max-width:52ch;font-size:16px}
+.board{background:var(--board);color:var(--board-ink);border-radius:10px;padding:8px clamp(10px,2vw,22px) 14px;box-shadow:0 2px 0 #00000055}
+.brow{display:grid;grid-template-columns:minmax(0,2.3fr) minmax(0,1.2fr) minmax(0,1.6fr) 8.5em 7.5em;gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid #2a2c33;font-family:Archivo,system-ui,sans-serif}
+.brow.head{font:600 13px/1.2 Archivo,sans-serif;color:#a8a49b;padding-block:10px}
+.brow:last-child{border-bottom:0}
+.bname a{font-weight:600;font-size:16px;text-decoration:none}
+.bname a:hover{text-decoration:underline}
+.bname span,.bnote{display:block;font-size:13px;color:#b9b4aa;line-height:1.35}
+.flaps{display:flex;gap:2px;white-space:nowrap}
+.flap{background:#23252c;border-radius:3px;padding:3px 0;width:1.25em;text-align:center;font:600 15px/1.2 Archivo,sans-serif;position:relative;animation:flip .5s ease-out both}
+.flap::after{content:"";position:absolute;left:0;right:0;top:50%;border-top:1px solid #0c0d10}
+.flap.gap{background:none;width:.5em}
+@keyframes flip{from{transform:rotateX(90deg)}to{transform:none}}
+.st{justify-self:start;font:600 13px/1 Archivo,sans-serif;padding:7px 9px;border-radius:4px;white-space:nowrap}
+.st.open{background:#1f7a4d;color:#fff}.st.soon{background:#e2462c;color:#fff}.st.up{background:#2f6fb0;color:#fff}.st.wait{background:#c9a227;color:#17141a}.st.closed{background:#3a3c43;color:#c8c4bb}
+.days{font:600 14px/1.2 Archivo,sans-serif;white-space:nowrap}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:14px;font:500 13px/1.4 Archivo,sans-serif;color:#f3d9df}
+.grid{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:clamp(24px,4vw,56px)}
+.kicker{font:600 14px/1.2 Archivo,sans-serif;color:var(--stamp);margin:0 0 8px}
+h2,h3{font-family:Archivo,system-ui,sans-serif;letter-spacing:-.02em;text-wrap:balance}
+.lead h2{font-size:clamp(28px,3.6vw,40px);line-height:1.08;margin:0 0 12px}
+.lead h2 a,.card h3 a{text-decoration:none}
+.lead h2 a:hover,.card h3 a:hover{text-decoration:underline}
+.dek{font-size:18px;color:var(--soft);margin:0 0 14px}
+.lead-fig{background:var(--panel);border-radius:10px;margin:0 0 18px;aspect-ratio:16/7;overflow:hidden}
+.lead-fig svg{width:100%;height:100%;display:block}
+.rail{border-left:1px solid var(--rule);padding-left:clamp(16px,2.4vw,32px)}
+.rail h3{font-size:20px;line-height:1.2;margin:4px 0 6px}
+.rail .card{padding-bottom:18px;margin-bottom:18px;border-bottom:1px solid var(--rule)}
+.rail .card:last-child{border:0;margin:0}
+.meta{font:500 13px/1.4 Archivo,sans-serif;color:var(--soft)}
+.sec-title{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-top:3px solid var(--ink);padding-top:10px;margin-bottom:22px}
+.sec-title h2{font-size:clamp(24px,3vw,32px);margin:0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:28px}
+.card h3{font-size:22px;line-height:1.15;margin:6px 0 8px}
+.card p{margin:0 0 8px;font-size:16px}
+.tint{background:var(--panel)}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px 32px}
+.steps li{counter-increment:s;padding-left:52px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:38px;height:38px;border-radius:50%;background:var(--teal);color:var(--bg);font:800 18px/38px Archivo,sans-serif;text-align:center}
+.steps b{font-family:Archivo,sans-serif;display:block;font-size:18px}
+.warn{border:2px solid var(--stamp);border-radius:10px;padding:16px 20px;margin-top:28px;display:flex;gap:16px;align-items:start}
+.warn svg{flex:none}
+.staff{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:14px 28px}
+.staff div{border-top:1px solid var(--rule);padding-top:10px}
+.staff b{font:600 16px/1.3 Archivo,sans-serif;display:block}
+.staff span{font-size:15px;color:var(--soft)}
+.signup{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.signup input{flex:1 1 240px;font:16px Archivo,sans-serif;padding:12px 14px;border:1px solid var(--soft);border-radius:6px;background:var(--bg);color:var(--ink)}
+button{font:600 16px Archivo,sans-serif;padding:12px 20px;border:0;border-radius:6px;background:var(--stamp);color:#fff;cursor:pointer;min-height:44px}
+#signup-msg{font:500 14px/1.4 Archivo,sans-serif;color:var(--teal);margin-top:8px;min-height:1.4em}
+footer{background:var(--wine);color:var(--wine-ink);font:500 14px/1.6 Archivo,sans-serif}
+footer .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:20px;padding-block:36px}
+footer b{font:700 22px/1.1 "Source Serif 4",serif}
+article.story{max-width:720px;margin:0 auto}
+article.story h1{font:800 clamp(30px,4.6vw,46px)/1.06 Archivo,sans-serif;letter-spacing:-.02em;margin:6px 0 14px;text-wrap:balance}
+article.story h2{font-size:22px;margin:30px 0 8px}
+article.story .src{border-top:1px solid var(--rule);margin-top:34px;padding-top:12px;font:500 14px/1.6 Archivo,sans-serif}
+article.story .src a{display:inline-block;margin-right:12px}
+.back{font:600 15px Archivo,sans-serif;text-decoration:none;display:inline-block;margin-bottom:18px}
+.factbox{background:var(--panel);border-left:4px solid var(--teal);padding:14px 18px;margin:20px 0;font-size:16px}
+.ai{font:500 13px/1.5 Archivo,sans-serif;color:var(--soft);border-top:1px solid var(--rule);margin-top:18px;padding-top:10px}
+.bars{margin:16px 0;font:500 15px/1.3 Archivo,sans-serif}
+.bar{display:grid;grid-template-columns:minmax(0,10em) minmax(0,1fr) 3.5em;gap:12px;align-items:center;padding:6px 0}
+.track{height:14px}
+.track i{display:block;height:100%;background:var(--teal);border-radius:2px;min-width:3px}
+.track i.neg{background:var(--stamp)}
+.bar b{text-align:right;white-space:nowrap}
+.tt-wrap{overflow-x:auto}
+table.tt{border-collapse:collapse;width:100%;font:500 15px/1.4 Archivo,sans-serif;margin:16px 0}
+.tt th,.tt td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--rule);vertical-align:top}
+
+.stops{list-style:none;padding:0;margin:20px 0;border-left:3px solid var(--teal)}
+.stops li{position:relative;padding:0 0 18px 26px}
+.stops li::before{content:"";position:absolute;left:-9px;top:6px;width:15px;height:15px;border-radius:50%;background:var(--bg);border:3px solid var(--teal)}
+.stops b{display:block;font:600 17px/1.3 Archivo,sans-serif;margin-bottom:2px}
+@media(max-width:860px){.grid{grid-template-columns:minmax(0,1fr)}.rail{border-left:0;padding-left:0;border-top:1px solid var(--rule);padding-top:20px}}
+@media(max-width:760px){.brow{grid-template-columns:minmax(0,1fr) auto;gap:6px 12px}.brow.head{display:none}.bwhere{grid-column:1;font-size:13px;color:#b9b4aa;order:2}.bdead{grid-column:1;order:3}.st{grid-row:1;grid-column:2;justify-self:end}.days{grid-column:2;justify-self:end;order:3}}
+@media(prefers-reduced-motion:reduce){.flap{animation:none}}
+</style>
+</head>
+<body>
+<div class="topline"><div class="wrap"><span id="today">Friday, 20 November 2026</span><span>Every deadline checked against the funder's own page</span></div></div>
+<header class="wrap mast">
+  <a class="logo" href="#top" id="top">The Wayfarer Journal<small>Opportunities, education and travel, verified.</small></a>
+</header>
+<nav aria-label="Sections"><div class="wrap">
+  <a href="#opportunities">Opportunities</a><a href="#news">News</a><a href="#travel">Travel and visas</a><a href="#tourism">Tourism</a><a href="#apply">How to apply</a><a href="#newsroom">Newsroom</a><a href="#standards">Standards</a>
+</div></nav>
+
+<main id="home">
+<section class="band hero" id="opportunities"><div class="wrap">
+  <div class="hero-head">
+    <h1>Scholarship departures: what is boarding now</h1>
+    <p>Major funded programmes for 2027 entry, with each deadline taken from the awarding body. Countdown and status update with today's date. Tap a name for the official page.</p>
+  </div>
+  <div class="board" role="table" aria-label="Scholarship deadlines">
+    <div class="brow head" role="row"><span role="columnheader">Programme</span><span role="columnheader">Destination</span><span role="columnheader">Deadline</span><span role="columnheader">Status</span><span role="columnheader">Time left</span></div>
+    <div id="rows"></div>
+  </div>
+  <div class="legend"><span>Expected = date based on the last cycle, not yet announced</span><span>Last verified 20 Nov 2026</span><span>Universities often set earlier internal deadlines</span></div>
+</div></section>
+
+<section class="band" id="news"><div class="wrap grid">
+  <div class="lead" id="lead"></div>
+  <aside class="rail" id="rail" aria-label="More news"></aside>
+</div></section>
+
+<section class="band tint" id="travel"><div class="wrap">
+  <div class="sec-title"><h2>Travel and visas</h2><span class="meta">Mobility desk</span></div>
+  <div class="cards" id="travel-cards"></div>
+</div></section>
+
+<section class="band" id="tourism"><div class="wrap">
+  <div class="sec-title"><h2>Tourism</h2><span class="meta">Travel and destinations desk</span></div>
+  <div class="grid"><div class="lead" id="tour-lead"></div><aside class="rail" id="tour-rail" aria-label="More tourism"></aside></div>
+  <div class="cards" id="dest-cards" style="margin-top:36px"></div>
+</div></section>
+
+<section class="band tint" id="apply"><div class="wrap">
+  <div class="sec-title"><h2>How to apply for a fully funded scholarship</h2><span class="meta">Guides desk</span></div>
+  <ol class="steps">
+    <li><b>Shortlist from official pages</b>Pick three to five programmes. Check nationality, age, degree and work-experience rules on the funder's own site before anything else.</li>
+    <li><b>Map the route</b>Many awards need two applications: one for university admission and one for the scholarship. Note both deadlines and any earlier university cut-off.</li>
+    <li><b>Build the file early</b>Passport, transcripts with certified translations, CV, language test and referees. Ask referees at least six weeks ahead.</li>
+    <li><b>Write to the criteria</b>Funders publish what they score: leadership, academic merit, impact at home. Answer each one with a concrete example.</li>
+    <li><b>Submit days early</b>Portals slow down near deadlines. Save every confirmation email and the time zone of the cut-off.</li>
+    <li><b>Prepare for the next round</b>Shortlists, interviews and results follow months later. Put those dates in your calendar now.</li>
+  </ol>
+  <div class="warn" role="note">
+    <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M20 10v13" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="20" cy="29" r="2" fill="currentColor"/></svg>
+    <div><b class="sans">Never pay for a "guaranteed" scholarship.</b> Government programmes such as Chevening, Gates Cambridge, Eiffel and Türkiye Bursları take applications through their own portals or partner universities. Anyone selling a place, or charging to "submit" for you, is not part of the process.</div>
+  </div>
+</div></section>
+
+<section class="band" id="newsroom"><div class="wrap">
+  <div class="sec-title"><h2>Who makes this journal</h2><span class="meta">17 AI agents, one human publisher</span></div>
+  <p style="max-width:70ch;margin-top:0">The Wayfarer Journal is written by a newsroom of AI agents, each tested for accuracy before taking a role. A human publisher approves every story before it goes live. Each agent's job is listed below.</p>
+  <div class="staff" id="staff"></div>
+</div></section>
+
+<section class="band tint" id="standards"><div class="wrap grid">
+  <div>
+    <div class="sec-title"><h2>Our standards</h2></div>
+    <p style="margin-top:0">Deadlines, amounts and eligibility rules come only from the awarding body's own page, and each listing shows when we last checked it. Dates not yet announced are marked Expected. Aggregator sites are used to find leads, never as proof.</p>
+    <p>We correct errors within 24 hours and note the change at the foot of the story. Nothing is quietly deleted.</p>
+    <p class="meta">Corrections log: no corrections yet.</p>
+  </div>
+  <div>
+    <div class="sec-title"><h2>Deadline alerts</h2></div>
+    <p style="margin-top:0">A weekly email with deadlines closing in the next 21 days.</p>
+    <form class="signup" id="signup"><label for="email" class="sans" style="flex-basis:100%;font-weight:600">Email address</label><input id="email" type="email" required autocomplete="email" placeholder="name@example.com"><button type="submit">Notify me</button></form>
+    <div id="signup-msg" aria-live="polite"></div>
+  </div>
+</div></section>
+</main>
+
+<main id="reader" hidden><div class="band wrap"><article class="story" id="story"></article></div></main>
+
+<footer><div class="wrap">
+  <div><b>The Wayfarer Journal</b><p>Independent service journalism on study opportunities, applications and travel.</p></div>
+  <div><p><a href="#standards">Editorial standards</a><br><a href="#newsroom">Newsroom</a><br><a href="#apply">How to apply</a></p></div>
+  <div><p>Produced by an AI newsroom and reviewed by a human editor. Always confirm a deadline on the official page before you apply.</p><p>© 2026 The Wayfarer Journal</p></div>
+</div></footer>
+
+<script>
+{
+const TODAY = new Date();
+const V = 'Verified 20 Nov 2026';
+const programmes = [
+ {name:'Gates Cambridge Scholarship',sub:'Master’s and PhD, University of Cambridge',where:'United Kingdom',deadline:'2026-12-08',note:'8 Dec 2026 or 6 Jan 2027, by course',url:'https://www.gatescambridge.org/apply/timeline/'},
+ {name:'France Excellence Eiffel',sub:'Master’s and PhD, nominated by a French university',where:'France',deadline:'2027-01-06',note:'Universities submit by 6 Jan 2027; their own cut-offs are earlier',url:'https://www.campusfrance.org/en/eiffel-scholarship-program-of-excellence'},
+ {name:'Erasmus Mundus Joint Masters',sub:'Study in two or more countries',where:'Europe',status:'open',note:'Each programme sets its own date, mostly Oct–Jan',url:'https://erasmus-plus.ec.europa.eu/node/476'},
+ {name:'Commonwealth Shared Scholarships',sub:'One-year master’s, Commonwealth citizens',where:'United Kingdom',status:'open',dlabel:'See CSC',note:'Opened 10 Nov 2026; see CSC for the closing date',url:'https://cscuk.fcdo.gov.uk/shared'},
+ {name:'Stipendium Hungaricum',sub:'Bachelor’s to PhD, via a sending partner',where:'Hungary',status:'wait',deadline:'2027-01-15',expected:true,note:'2027/28 call not yet published',url:'https://stipendiumhungaricum.hu/apply/'},
+ {name:'Türkiye Bursları',sub:'Full degrees plus a year of Turkish',where:'Türkiye',opens:'2027-01-10',deadline:'2027-02-20',expected:true,note:'Window 10 Jan – 20 Feb 2027',url:'https://www.turkiyeburslari.gov.tr/'},
+ {name:'SI Scholarship for Global Professionals',sub:'Master’s, for working professionals',where:'Sweden',opens:'2027-02-08',deadline:'2027-02-24',note:'Apply to the master’s first, by 15 Jan 2027',url:'https://si.se/en/apply/scholarships/swedish-institute-scholarships-for-global-professionals/'},
+ {name:'Commonwealth Master’s Scholarships',sub:'Full-time taught master’s',where:'United Kingdom',deadline:'2026-10-20',note:'2027/28 round closed',url:'https://cscuk.fcdo.gov.uk/masters'},
+ {name:'Chevening Scholarships',sub:'One-year master’s in the UK',where:'United Kingdom',deadline:'2026-10-06',note:'Interviews March–April 2027',url:'https://www.chevening.org/scholarships/application-timeline/'}
+];
+const LABEL = {open:'Open',soon:'Closing soon',up:'Upcoming',wait:'Awaiting call',closed:'Closed'};
+const day = s => new Date(s + 'T23:59:00');
+const fmt = s => day(s).toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'});
+const daysTo = s => Math.floor((day(s) - TODAY) / 864e5);
+function statusOf(p){
+  if (p.deadline && daysTo(p.deadline) < 0) return 'closed';
+  if (p.status) return p.status;
+  if (p.opens && daysTo(p.opens) > 0) return 'up';
+  if (p.deadline && daysTo(p.deadline) <= 21) return 'soon';
+  return 'open';
+}
+const order = {soon:0,open:1,wait:2,up:3,closed:4};
+const flaps = (txt, i) => [...txt].map((c, k) => c === ' ' ? '<span class="flap gap"></span>' : `<span class="flap" style="animation-delay:${(i * 60 + k * 25)}ms">${c}</span>`).join('');
+function renderBoard(){
+  const list = programmes.map(p => ({...p, st:statusOf(p)})).sort((a, b) => order[a.st] - order[b.st] || (a.deadline || '9').localeCompare(b.deadline || '9'));
+  document.getElementById('rows').innerHTML = list.map((p, i) => {
+    const d = p.deadline ? daysTo(p.deadline) : null;
+    const left = p.st === 'closed' ? '—' : p.st === 'up' && p.opens ? `opens in ${daysTo(p.opens)} d` : d !== null && !p.expected ? `${d} days` : p.expected ? 'expected' : 'varies';
+    const dl = p.deadline ? flaps(fmt(p.deadline).toUpperCase(), i) : `<span class="days">${p.dlabel || 'Per programme'}</span>`;
+    return `<div class="brow" role="row"><div class="bname" role="cell"><a href="${p.url}" target="_blank" rel="noopener">${p.name}</a><span>${p.sub}</span></div><div class="bwhere" role="cell">${p.where}</div><div class="bdead" role="cell"><div class="flaps">${dl}</div><span class="bnote">${p.expected ? 'Expected. ' : ''}${p.note}</span></div><span class="st ${p.st}" role="cell">${LABEL[p.st]}</span><span class="days" role="cell">${left}</span></div>`;
+  }).join('');
+}
+
+const stories = [
+ {id:'etias',desk:'Travel and visas',title:'Europe’s ETIAS still has no start date',dek:'The EU has not fixed a launch day for its €20 travel authorisation, and most observers now expect 2027. Here is what applies at Schengen borders today.',
+  body:`<p>Visa-exempt visitors to the Schengen area do not need to apply for anything new yet. ETIAS, the EU’s online travel authorisation, was planned for the last quarter of 2026, but it is not operating and no launch date has been set.</p>
+  <p>The European Commission has said it will set a date once all conditions are in place. Industry trackers now expect the start to move into 2027, and the official portal no longer shows the 2026 window. The EU has promised to announce the date several months before launch.</p>
+  <h2>What does apply now: the Entry/Exit System</h2>
+  <p>The Entry/Exit System (EES) has been fully operational since 10 April 2026 across 29 European countries. It replaces passport stamps for non-EU short-stay visitors and records your fingerprints and a facial image the first time you cross. The temporary rules that let busy border posts pause registrations expired on 6 September 2026.</p>
+  <div class="factbox"><b class="sans">Need a Schengen visa instead?</b> The standard short-stay fee for adults is €90, unchanged since June 2024. Service centres may add their own charges.</div>
+  <h2>What to do</h2>
+  <p>Allow extra time at your first EES entry. Ignore websites offering to “pre-register” you for ETIAS: there is nothing to apply for yet. When it opens, the official fee will be €20.</p>`,
+  src:[['Which?','https://www.which.co.uk/news/article/etias-visa-waiver-europe-aUyAH7U3Hd2p'],['Council of the EU: EES','https://consilium.europa.eu/en/policies/entryexit-system/'],['Newland Chase','https://newlandchase.com/schengen-ees-flexibility-lapses-as-etias-launch-appears-likely-to-move-to-2027/'],['The Connexion','https://www.connexionfrance.com/practical/etias-october-launch-of-eu-travel-permit-now-unlikely/821089']]},
+ {id:'gates',desk:'Opportunities',title:'Gates Cambridge: two deadlines left for international applicants',dek:'The US round has closed. Everyone else applies by 8 December 2026 or 6 January 2027, depending on the course.',
+  body:`<p>The Gates Cambridge Scholarship funds full-cost postgraduate study at the University of Cambridge. The round for US citizens living in the US closed on 14 October 2026.</p>
+  <p>For all other applicants the funding deadline depends on the course: either 8 December 2026 or 6 January 2027, at 11:59pm UK time. Your course page in the Cambridge Course Directory shows which applies.</p>
+  <h2>How to apply</h2>
+  <p>There is no separate form. You apply for your Cambridge course and complete the Gates Cambridge section in the same application, including a Gates reference. Submit by the funding deadline, even if the course accepts admissions later: a later admission date does not keep you in the scholarship race.</p>`,
+  src:[['Gates Cambridge: timeline','https://www.gatescambridge.org/apply/timeline/']]},
+ {id:'eiffel',desk:'Opportunities',title:'Eiffel 2027: the deadline that matters is your university’s',dek:'Students cannot apply to Campus France directly. French universities nominate, and many close their own calls in November.',
+  body:`<p>The France Excellence Eiffel programme, funded by the French foreign ministry and run by Campus France, opened its 2027 call in October 2026 for master’s and PhD study starting in 2027–28.</p>
+  <p>Only French higher-education institutions can submit candidates. The national cut-off for institutions is 6 January 2027 in the 2027 instructions (some pages show 8 January). Universities set their own, earlier dates: TSM closed its call on 16 November 2026, and Paris-Saclay’s internal deadline is 26 November 2026.</p>
+  <h2>What to do this week</h2>
+  <p>Find the Eiffel page of each French university you want, check whether its internal call is still open, and send the documents it asks for. Apply for the degree itself through the normal admission route as well.</p>`,
+  src:[['Université Paris-Saclay','https://www.universite-paris-saclay.fr/en/admission/bourses-et-aides-financieres/eiffel-scholarship-programme'],['TSM','https://tsm-education.fr/en/international/eiffel-scholarship'],['Campus France','https://www.campusfrance.org/en/eiffel-scholarship-program-of-excellence']]},
+ {id:'hungary',desk:'Opportunities',title:'Stipendium Hungaricum: the 2027/28 call is still to come',dek:'Last year the portal opened on 17 November. When we checked on 20 November 2026, the official site showed only the old call.',
+  body:`<p>Hungary’s government scholarship covers tuition and contributes to living and housing costs for students from partner countries. When we checked the programme’s official site on 20 November 2026, it still showed only the 2026/27 call.</p>
+  <p>In the last cycle the online system opened on 17 November 2025 and closed on 15 January 2026 at 2pm Central European Time. A similar timetable is expected, but no 2027/28 date is confirmed.</p>
+  <h2>Two applications, not one</h2>
+  <p>You must apply online and also be nominated by your country’s sending partner, which sets its own requirements. Use the wait to prepare transcripts, a language certificate and a motivation letter.</p>`,
+  src:[['Stipendium Hungaricum','https://stipendiumhungaricum.hu/apply_timeline/'],['Application news, Nov 2025','https://stipendiumhungaricum.hu/news/application-is-on-for-the-2026-2027-stipendium-hungaricum-scholarship/']]},
+ {id:'uketa',desk:'Travel and visas',title:'UK travel authorisation now costs £20',dek:'Visa-exempt visitors cannot board without an ETA, and the fee rose by a quarter in April.',
+  body:`<p>Visitors who do not need a UK visa for stays of up to six months must hold an Electronic Travel Authorisation. Strict enforcement began in late February 2026: airlines refuse boarding without one.</p>
+  <p>The fee has been £20 since 8 April 2026, up from £16. An ETA lasts two years, or until the passport expires, and covers multiple visits. The Home Office advises applying at least three working days before travel and warns that other websites may charge more than the official fee.</p>`,
+  src:[['GOV.UK: apply for an ETA','https://gov.uk/eta/apply'],['Home Office factsheet','https://homeofficemedia.blog.gov.uk/electronic-travel-authorisation/']]},
+ {id:'morocco',desk:'Tourism',title:'Morocco passes 15.7 million visitors by September',dek:'Arrivals rose 5% on 2025, keeping the country on course for its 2030 target.',
+  body:`<p>Morocco welcomed 15.7 million tourists in the first nine months of 2026, the tourism ministry said on 8 October, about 717,000 more than a year earlier. September alone brought more than 1.5 million arrivals, up 8%.</p>
+  <p>The country hosted a record 19.8 million visitors in 2025 and aims for 26 million a year by 2030. Growth is coming from Europe and beyond: arrivals from Poland rose 31%.</p>`,
+  src:[['Morocco World News','https://www.moroccoworldnews.com/2026/10/341229/morocco-welcomes-15-7-million-tourists-by-end-of-september-2026/'],['Travel Extra','https://www.travelextra.ie/?p=154093']]},
+ {id:'unesco',desk:'Tourism',title:'25 new World Heritage sites for your list',dek:'From Mount Olympus to Tashkent’s modernist buildings, the 2026 inscriptions bring the list to 1,273 sites.',
+  body:`<p>Meeting in Busan, South Korea, from 19 to 29 July 2026, UNESCO’s World Heritage Committee added 25 sites: 19 cultural, five natural and one mixed. The list now counts 1,273 sites in 173 countries.</p>
+  <p>Comoros, São Tomé and Príncipe and South Sudan received their first inscriptions. New cultural sites include Alvar Aalto’s works in Finland, Alamūt Castle in Iran and ten modernist buildings in Tashkent; the wider Mount Olympus area in Greece is the one mixed site. Sebastia, in the West Bank, was among three sites inscribed and placed straight on the List of World Heritage in Danger.</p>`,
+  src:[['WAM','https://www.wam.ae/en/article/17ch63p-unesco-inscribes-new-sites-its-world-heritage'],['Outlook Traveller','https://www.outlooktraveller.com/News/25-new-unesco-world-heritage-sites-you-need-to-know-about-in-2026'],['The Art Newspaper','https://www.theartnewspaper.com/2026/07/29/sites-in-iran-lebanon-and-palestine-among-25-new-additions-to-unescos-world-heritage-list']]},
+ {id:'rabat',desk:'Tourism',title:'Rabat makes Lonely Planet’s list of places to visit in 2027',dek:'Morocco’s capital joins Québec, the Veneto and Oman among the 25 destinations in Best in Travel 2027.',
+  body:`<p>Rabat is one of 25 destinations in Lonely Planet’s Best in Travel 2027, released in late September 2026. The list does not rank its picks. The publisher singles out the city’s historic sites, Atlantic beaches, cultural scene and traditional riads.</p>
+  <p>It is a second year in the spotlight: Time Out recently named Rabat’s beachside L’Océan district the world’s second-coolest neighbourhood. Oman is also on the 2027 list, and Abu Dhabi features among the guide’s recommendations.</p>
+  <h2>Getting around</h2>
+  <p>Rabat and its sister city Salé face each other across the Bouregreg river. Cross by tram, grand taxi, or in a shared wooden rowing boat. Morocco welcomed 15.7 million visitors in the first nine months of 2026, so book riads early for spring and autumn.</p>
+  <p><a href="#story-rabatguide"><b class="sans">Read our two-day guide to Rabat and Salé →</b></a></p>
+  <div class="factbox"><b class="sans">The 25 destinations for 2027</b><br>Québec · California’s coastal redwoods · Maryland · Prince Edward Island · New Mexico · Veneto · Dessau · Swedish Riviera · Šibenik · León · Montserrat · Bariloche · Granada (Nicaragua) · Bocas del Toro · Oman · Rabat · Tsavo East and West · Dunedin and the Waitaki · The Tweed · New Caledonia · Okinawa · Chengdu · Gujarat · Da Nang · Fulidhoo</div>`,
+  src:[['Morocco World News','https://www.moroccoworldnews.com/2026/10/341742/rabat-among-best-places-to-visit-in-2027/'],['Travel Noire: full list','https://travelnoire.com/lonely-planet-best-in-travel-2027'],['Time Out','https://www.timeout.com/news/lonely-planet-best-in-travel-2027-092326'],['ANBA via MENAFN','https://menafn.com/1111809631/Rabat-In-Lonely-Planets-2027-Travel-Guide'],['National Geographic','https://www.nationalgeographic.com/travel/best-of-the-world-2026/article/rabat-morocco']]},
+ {id:'untourism',desk:'Tourism',title:'Global travel growth stalls at 0.4% as the Middle East slumps',dek:'UN Tourism counted 690 million international trips in the first half of 2026 and cut its full-year forecast to 1–2%.',
+  body:`<p>International tourist arrivals reached about 690 million between January and June 2026, only 3 million more than a year earlier, according to UN Tourism’s September World Tourism Barometer. Growth of 2% in the first quarter turned into a 1% fall in the second.</p>
+  <p>The agency now expects arrivals to grow 1% to 2% in 2026, down from the 3% to 4% it forecast in January. It said the outlook depends on how long the conflict in the Middle East lasts and its effect on oil prices and inflation.</p>
+  <h2>Change in arrivals by region, January–June 2026</h2>
+  <div class="bars" role="img" aria-label="Africa +4%, Europe +3%, Americas +2%, Asia and the Pacific +1%, Middle East -22%">${[['Africa',4],['Europe',3],['Americas',2],['Asia and the Pacific',1],['Middle East',-22]].map(([r, v]) => `<div class="bar"><span>${r}</span><div class="track"><i class="${v < 0 ? 'neg' : ''}" style="width:${Math.abs(v) / 22 * 100}%"></i></div><b>${v > 0 ? '+' : '−'}${Math.abs(v)}%</b></div>`).join('')}</div>
+  <p>Asia and the Pacific remain 11% below 2019 levels. In June alone, arrivals fell 6% in Western Europe, partly because of a heatwave.</p>`,
+  src:[['UN Tourism Barometer release (via Hospitality Net)','https://www.hospitalitynet.org/news/4134434/international-tourism-holds-steady-with-04-growth-in-first-half-of-2026-as-middle-east-conflict-and-rising-costs-weigh-on-momentum'],['UN Tourism data','https://www.untourism.int/un-tourism-world-tourism-barometer-data']]},
+ {id:'uaevisa',desk:'Travel and visas',title:'The UAE’s five-year tourist visa: cost, rules and how to apply',dek:'Open to all nationalities with no sponsor, it allows up to 180 days a year. Most of the Dh3,713 cost is a refundable guarantee.',
+  body:`<p>The UAE’s five-year multiple-entry tourist visa lets visitors of any nationality come and go without a local sponsor or host. Each visit can last up to 90 days, extendable once by 90 days, but total time in the country may not exceed 180 days in a year.</p>
+  <h2>What it costs</h2>
+  <p>Dubai’s residency authority, GDRFA, puts the total at about Dh3,713. Of that, Dh3,000 is a refundable guarantee; the application and issuance fees are Dh100 and Dh500, plus small service charges.</p>
+  <h2>What you need</h2>
+  <p>A passport valid for six months, a photo, UAE health insurance, a return ticket, and six months of attested bank statements showing a balance of at least $4,000 (Dh14,690). Apply through a GDRFA account under “New 5 Years Tourism Entry Permit”; you must enter within two months of issue.</p>
+  <div class="factbox">Not the same as the <b>Dubai Access Club</b>, an invitation-only membership for repeat visitors that bundles the visa with hotel and shopping perks.</div>`,
+  src:[['Gulf News (GDRFA figures)','https://gulfnews.com/living-in-uae/visa-immigration/dubai-five-year-multiple-entry-tourist-visa-1.500665868'],['UAE government portal','https://u.ae/en/information-and-services/visa-and-emirates-id/Types-of-visas/tourist-visa'],['Khaleej Times: Dubai Access Club','https://www.khaleejtimes.com/uae/dubai-access-club-benefits-tourism-intiative-multiple-entry-visa']]},
+ {id:'taxes',desk:'Tourism',title:'UK tourist taxes: what an overnight stay will cost in 2027',dek:'Edinburgh started charging in July 2026. Glasgow, Aberdeen and Welsh councils follow next year, and English mayors are getting the power too.',
+  body:`<p>Visitors to the UK will increasingly see a levy on their accommodation bill. The charges apply to everyone, whatever their nationality or reason for travel.</p>
+  <div class="tt-wrap"><table class="tt"><thead><tr><th>Where</th><th>Charge</th><th>From</th></tr></thead><tbody>
+  <tr><td>Edinburgh</td><td>5% per night, capped at 5 nights</td><td>July 2026</td></tr>
+  <tr><td>Glasgow</td><td>5% per night</td><td>25 Jan 2027</td></tr>
+  <tr><td>Aberdeen</td><td>7% per night</td><td>1 Apr 2027</td></tr>
+  <tr><td>Wales (councils that opt in)</td><td>Up to £1.30 per person per night; 75p in hostels and campsites</td><td>Apr 2027 at the earliest</td></tr>
+  <tr><td>England (mayors that opt in)</td><td>Expected up to 5%</td><td>Before end of 2029</td></tr></tbody></table></div>
+  <p>Liverpool and Manchester already add small nightly charges in their city centres through business improvement districts.</p>`,
+  src:[['Euronews, Sept 2026','https://euronews.com/travel/2026/09/11/tourist-tax-in-england-which-destinations-could-introduce-a-new-overnight-levy'],['The Independent via Yahoo','https://www.yahoo.com/news/articles/much-tourist-taxes-uk-where-153252508.html']]},
+ {id:'rabatguide',desk:'Tourism · Visitor guide',title:'Rabat and Salé: a two-day guide for 2027',dek:'Two cities, one river. How to see the Kasbah, the Hassan Tower, Chellah and Salé’s old medina without a car.',
+  body:`<p>Rabat is on Lonely Planet’s list of places to visit in 2027, and its historic core has been a UNESCO World Heritage site since 2012. Salé faces it across the Bouregreg river. Together they make an easy, walkable trip of two days.</p>
+  <ol class="stops">
+   <li><b>Day 1, morning: Kasbah of the Udayas</b>A 12th-century Almohad citadel on the cliff where the river meets the Atlantic. Walk its white-and-blue lanes, then down to the beach below.</li>
+   <li><b>Day 1, late morning: the Medina</b>Rabat’s old town sits next to the Kasbah. Good for crafts, street food and a calm market walk.</li>
+   <li><b>Day 1, afternoon: Hassan Tower and Mohammed V Mausoleum</b>The tower is what remains of a vast mosque begun in the 12th century and never finished. The royal mausoleum stands on the same esplanade.</li>
+   <li><b>Day 1, evening: the Royal Theatre</b>Zaha Hadid’s theatre on the riverbank gave its opening performance on 22 April 2026. It has an 1,800-seat hall and a 7,000-seat open-air amphitheatre; check its programme for shows.</li>
+   <li><b>Day 2, morning: Chellah</b>Roman ruins and a Merinid necropolis in gardens full of storks, reopened after restoration. Book on the official site.</li>
+   <li><b>Day 2, afternoon: cross to Salé</b>Take the tram over the Hassan II bridge, or a flouka rowing boat across the river. Salé’s medina is quieter than Rabat’s, with its Great Mosque and the old sea gate, Bab Mrisa.</li>
+  </ol>
+  <h2>Practical information</h2>
+  <div class="tt-wrap"><table class="tt"><thead><tr><th>Item</th><th>Detail</th></tr></thead><tbody>
+  <tr><td>Tram ticket</td><td>7 MAD, valid one hour across the network with transfers</td></tr>
+  <tr><td>Chellah entry</td><td>From 70 MAD; audio guide 120 MAD; half price for Moroccans and residents</td></tr>
+  <tr><td>Airport to city</td><td>The tram does not reach Rabat-Salé airport: use the shuttle bus or a taxi</td></tr>
+  <tr><td>Best seasons</td><td>Spring and autumn; book riads early</td></tr>
+  </tbody></table></div>
+  <p>Prices were checked on 20 November 2026 and can change. Opening hours vary by season and during Ramadan, so confirm on each site before you go.</p>`,
+  src:[['UNESCO: Rabat, Modern Capital and Historic City','https://whc.unesco.org/en/list/1401/'],['Tramway Rabat-Salé: tickets','https://www.tram-way.ma/en/ticket-and-fines'],['Yabiladi: Chellah reopening','https://en.yabiladi.com/articles/details/149955/whatsapp:/send'],['Morocco World News: Royal Theatre','https://www.moroccoworldnews.com/2026/04/288265/rabats-royal-theater-opens-doors-with-all-moroccan-gala/'],['Le Desk: opening night','https://ledesk.ma/?p=307107'],['National Geographic: crossing to Salé','https://www.nationalgeographic.com/travel/best-of-the-world-2026/article/rabat-morocco']]}
+];
+const byId = Object.fromEntries(stories.map(s => [s.id, s]));
+const link = s => `#story-${s.id}`;
+const card = (s, big) => `<div class="card"><p class="kicker">${s.desk}</p><h3><a href="${link(s)}">${s.title}</a></h3>${big ? `<p>${s.dek}</p>` : ''}<span class="meta">${V}</span></div>`;
+const stampFig = `<svg viewBox="0 0 640 280" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="640" height="280" fill="var(--panel)"/><g opacity=".35" stroke="var(--soft)">${Array.from({length:14},(_, i) => `<line x1="0" x2="640" y1="${20 + i * 20}" y2="${20 + i * 20}"/>`).join('')}</g><g transform="rotate(-8 190 140)"><rect x="70" y="60" width="240" height="150" rx="14" fill="none" stroke="var(--teal)" stroke-width="5"/><text x="190" y="118" text-anchor="middle" font-family="Archivo" font-weight="800" font-size="34" fill="var(--teal)">EES</text><text x="190" y="152" text-anchor="middle" font-family="Archivo" font-weight="600" font-size="16" fill="var(--teal)">IN FORCE 10 APR 2026</text><text x="190" y="182" text-anchor="middle" font-family="Archivo" font-size="13" fill="var(--teal)">29 COUNTRIES</text></g><g transform="rotate(7 460 140)"><circle cx="460" cy="140" r="92" fill="none" stroke="var(--stamp)" stroke-width="5" stroke-dasharray="14 8"/><circle cx="460" cy="140" r="74" fill="none" stroke="var(--stamp)" stroke-width="2"/><text x="460" y="134" text-anchor="middle" font-family="Archivo" font-weight="800" font-size="30" fill="var(--stamp)">ETIAS</text><text x="460" y="162" text-anchor="middle" font-family="Archivo" font-weight="600" font-size="15" fill="var(--stamp)">DATE NOT SET</text></g></svg>`;
+const rabatFig = `<svg viewBox="0 0 640 280" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6c48a"/><stop offset="1" stop-color="#f3e3cf"/></linearGradient><linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f8c96"/><stop offset="1" stop-color="#0e5e68"/></linearGradient></defs><rect width="640" height="280" fill="url(#sky)"/><circle cx="520" cy="96" r="38" fill="#fbe7c4"/><path d="M0 196 L60 188 L120 192 L150 176 L190 178 L230 170 L300 174 L330 186 L640 184 L640 280 L0 280Z" fill="#c98d64" opacity=".55"/><g fill="#8d4a32"><rect x="236" y="70" width="64" height="128"/><rect x="244" y="82" width="12" height="20" fill="#6a3424"/><rect x="280" y="82" width="12" height="20" fill="#6a3424"/><rect x="262" y="120" width="12" height="22" fill="#6a3424"/><rect x="244" y="156" width="12" height="20" fill="#6a3424"/><rect x="280" y="156" width="12" height="20" fill="#6a3424"/><rect x="300" y="70" width="16" height="128" fill="#6a3424"/></g><g fill="#b8735a">${Array.from({length:9},(_, i) => `<rect x="${340 + i * 26}" y="176" width="10" height="24" rx="2"/>`).join('')}</g><path d="M0 198 L640 194 L640 280 L0 280Z" fill="url(#sea)"/><g stroke="#e9f4f2" stroke-width="2" opacity=".6">${Array.from({length:7},(_, i) => `<line x1="${30 + i * 90}" x2="${70 + i * 90}" y1="${222 + (i % 3) * 14}" y2="${222 + (i % 3) * 14}"/>`).join('')}</g><g transform="translate(120 236)"><path d="M-46 0 Q0 18 46 0 Z" fill="#f2efe6"/><line x1="-20" y1="2" x2="-40" y2="-14" stroke="#3b2a20" stroke-width="3"/></g></svg>`;
+function renderHome(){
+  const lead = byId.etias;
+  document.getElementById('lead').innerHTML = `<figure class="lead-fig">${stampFig}</figure><p class="kicker">${lead.desk}</p><h2><a href="${link(lead)}">${lead.title}</a></h2><p class="dek">${lead.dek}</p><span class="meta">${V}</span>`;
+  document.getElementById('rail').innerHTML = ['gates','eiffel','hungary'].map(id => card(byId[id], false)).join('');
+  document.getElementById('travel-cards').innerHTML = ['uaevisa','uketa','etias'].map(id => card(byId[id], true)).join('');
+  const t = byId.rabat;
+  document.getElementById('tour-lead').innerHTML = `<figure class="lead-fig">${rabatFig}</figure><p class="kicker">${t.desk}</p><h2><a href="${link(t)}">${t.title}</a></h2><p class="dek">${t.dek}</p><span class="meta">${V}</span>`;
+  document.getElementById('tour-rail').innerHTML = ['rabatguide','untourism','taxes'].map(id => card(byId[id], true)).join('');
+  document.getElementById('dest-cards').innerHTML = ['morocco','unesco'].map(id => card(byId[id], true)).join('');
+}
+const staff = [['Director General','Strategy, budget, weekly report to the publisher'],['Editor-in-Chief','Approves every story; final editorial call'],['Managing Editor','Assignments and the daily schedule'],['Opportunities Editor','Runs the scholarship board'],['Education Correspondent','Universities, admissions, government awards'],['Mobility and Visa Correspondent','Entry rules, visas and fees'],['Travel and Destinations Writer','Places, heritage, tourism data'],['How-To Guides Writer','Step-by-step application guides'],['Verification Editor','Checks every date, sum and rule'],['Copy Editor','Language, style and headlines'],['Public Editor','Reader complaints and corrections'],['Legal Counsel','Copyright, privacy and fairness'],['Visual Editor','Licensed images and graphics'],['Audience and SEO Editor','Newsletter and search'],['Platform Engineer','Site, speed and accessibility'],['Data and Automation Engineer','Deadline tracker and broken-link checks'],['Head of People','Tests and reviews every agent']];
+document.getElementById('staff').innerHTML = staff.map(([r, d]) => `<div><b>${r}</b><span>${d}</span></div>`).join('');
+function renderStory(s){
+  document.getElementById('story').innerHTML = `<a class="back" href="#news">← All news</a><p class="kicker">${s.desk}</p><h1>${s.title}</h1><p class="dek">${s.dek}</p><p class="meta">${V}</p>${s.body}<div class="src"><b>Sources</b><br>${s.src.map(([t, u]) => `<a href="${u}" target="_blank" rel="noopener">${t}</a>`).join('')}</div><p class="ai">Produced by The Wayfarer Journal’s AI newsroom and reviewed by a human editor. Confirm any deadline on the official page before you apply.</p>`;
+}
+function route(){
+  const h = location.hash.slice(1);
+  const home = document.getElementById('home'), reader = document.getElementById('reader');
+  if (h.startsWith('story-') && byId[h.slice(6)]) {
+    renderStory(byId[h.slice(6)]); home.hidden = true; reader.hidden = false; window.scrollTo(0, 0);
+  } else {
+    home.hidden = false; reader.hidden = true;
+    const t = h && document.getElementById(h); if (t) t.scrollIntoView();
+  }
+}
+document.getElementById('signup').addEventListener('submit', e => {
+  e.preventDefault();
+  document.getElementById('signup-msg').textContent = 'Alerts launch with the newsletter. Nothing was sent or stored yet.';
+});
+document.getElementById('today').textContent = TODAY.toLocaleDateString('en-GB',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+renderBoard(); renderHome(); route();
+window.addEventListener('hashchange', route);
+}
+</script>
+</body>
+</html>

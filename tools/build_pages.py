@@ -39,7 +39,7 @@ with sync_playwright() as p:
 <header class="wrap mast"><a class="logo" href="/">Fursaway<small>Opportunities, education and travel, verified.</small></a></header>
 <nav aria-label="Sections"><div class="wrap"><a href="/#opportunities">Opportunities</a><a href="/#news">News</a><a href="/#travel">Travel and visas</a><a href="/#tourism">Tourism</a><a href="/#apply">How to apply</a><a href="/#newsroom">Newsroom</a><a href="/#standards">Standards</a></div></nav>
 <main><div class="band wrap"><article class="story">{art}</article></div></main>
-<footer><div class="wrap"><div><b>Fursaway</b><p>Independent service journalism on study opportunities, applications and travel.</p></div><div><p>Produced by an AI newsroom and reviewed by a human editor. Always confirm a deadline on the official page before you apply.</p><p>© 2026 Fursaway</p></div></div></footer>
+<footer><div class="wrap"><div><b>Fursaway</b><p>Independent service journalism on study opportunities, applications and travel.</p></div><div><p>Produced by an AI newsroom with a fact-check desk and an editor-in-chief. Always confirm a deadline on the official page before you apply.</p><p>© 2026 Fursaway</p></div></div></footer>
 </body></html>'''
         (out / f'{sid}.html').write_text(page); urls.append(f'{U}/stories/{sid}.html')
     b.close()
